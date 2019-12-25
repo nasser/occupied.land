@@ -70,6 +70,16 @@ iframe {
   font-family: "Kawkab Mono Light";
   font-size: 0.75em;
   overflow: auto;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1000px) {
+  #about {
+    width: calc(100% - 150px);
+    height: calc(100% - 150px);
+    flex-direction: column;  
+    align-items: center;
+  }
 }
 
 #about.invisible {
@@ -98,9 +108,10 @@ iframe {
 
 #about div.en,
 #about div.ar {
-  width: 50%;
-  height: 100%;
+  width: 80%;
+  height: auto;
   margin: 0 25px;
+  clear: both;
 }
 
 #about div.en {
