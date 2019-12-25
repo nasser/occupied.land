@@ -28,9 +28,9 @@ let places = [
     if(sequence.length == 0) {
       sequence = newSequence();
     }
-    // return sequence.pop()
+    return sequence.pop()
     
-    return places[i++];
+    // return places[i++];
   }
   
   function newSequence() {
