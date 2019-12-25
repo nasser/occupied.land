@@ -20,8 +20,6 @@ let places = [
     "!4v1565571619899!6m8!1m7!1sjjphbaW5T9mfKCxFCBMxJw!2m2!1d32.19911756237823!2d35.00581682131819!3f356.85!4f1.8400000000000034!5f0.4000000000000002"
   ]
   
-  let i = 0
-  
   let sequence = [places[0]]
   
   function randomItem() {
@@ -30,7 +28,7 @@ let places = [
     }
     return sequence.pop()
     
-    // return places[i++];
+    // return places.pop()
   }
   
   function newSequence() {
