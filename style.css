@@ -69,6 +69,7 @@ iframe {
   display: flex;
   font-family: "Kawkab Mono Light";
   font-size: 0.75em;
+  overflow: auto;
 }
 
 #about.invisible {
