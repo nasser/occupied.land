@@ -79,6 +79,7 @@ iframe {
     height: calc(100% - 150px);
     flex-direction: column;  
     align-items: center;
+    font-size: 0.6em;
   }
 }
 
