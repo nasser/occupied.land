@@ -22,7 +22,7 @@ let places = [
   
   let i = 0
   
-  let sequence = newSequence();
+  let sequence = [places[0]]
   
   function randomItem() {
     if(sequence.length == 0) {
