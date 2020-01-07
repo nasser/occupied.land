@@ -3,6 +3,49 @@
   src: url("/font/KawkabMono-Light.woff2") format("woff2"),
         url("/font/KawkabMono-Light.woff") format("woff");
 }
+
+#curtain {
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 3;
+  opacity: 1;
+}
+
+#curtain.invisible {
+  opacity: 0;
+  transition: 1s;
+}
+
+#introduction {
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+#introduction.invisible {
+  opacity: 0;
+  transition: 1s;
+}
+
+#introduction b {
+  top: 14px;
+  left: 120px;
+  display: block;
+  position: fixed;
+  font-family: "Kawkab Mono Light";
+  font-size: 0.75em;
+}
+
+@media only screen and (max-width: 600px) {
+  #introduction b {
+    top: 10px;
+  }  
+}
   
 #debug {
   position: fixed;
@@ -35,12 +78,6 @@ iframe {
   top: 5px;
   left: 50px;
   font-size: 25px;
-  opacity: 0;
-}
-
-#buttons.visible {
-  opacity: 1;
-  transition: 1s;  
 }
 
 #buttons i {

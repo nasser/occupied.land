@@ -64,9 +64,21 @@ let places = [
   
   window.onload = function() {
     goToAnotherPlace();
-    setTimeout(() => {
-      document.querySelector("#buttons").setAttribute("class", "visible")
-    }, 2000)
+    let curtain = document.querySelector("#curtain")
+    setTimeout(function() {
+      curtain.setAttribute("class", "invisible")
+      setTimeout(function() {
+        curtain.parentElement.removeChild(curtain);
+      }, 500)
+    }, 750)
+  }
+
+  function hideIntroduction() {
+    let intro = document.querySelector('#introduction')
+    intro.setAttribute('class', 'invisible')
+    setTimeout(function() {
+      intro.parentElement.removeChild(intro)
+    }, 1500);
   }
   
   // https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
