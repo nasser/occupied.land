@@ -25,6 +25,9 @@
   position: fixed;
   z-index: 2;
   opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #introduction.invisible {
@@ -33,12 +36,12 @@
 }
 
 #introduction b {
-  top: 14px;
-  left: 120px;
+  padding-bottom: 50px;
   display: block;
-  position: fixed;
   font-family: "Kawkab Mono Light";
-  font-size: 0.75em;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.25em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -75,14 +78,18 @@ iframe {
 
 #buttons {
   position: absolute;
-  top: 5px;
-  left: 50px;
-  font-size: 25px;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  font-size: 37.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons i {
   display:inline-block;
-  margin-right: 1em;
+  margin: 0 0.5em;
   font-size: 0.75em;
 }
 
